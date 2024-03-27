@@ -18,10 +18,14 @@ public class DatingAppMenu extends JFrame{
         setMinimumSize(new Dimension(730, 650));
         setVisible(true);
 
+        String filepath2 = "src/Content/Click.wav";
+        buttonClickSound clickSound = new buttonClickSound();
 
         startBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
+
                 newGameWindow = new GameWindow();
                 newGameWindow.setVisible(true);
                 dispose();
@@ -30,6 +34,7 @@ public class DatingAppMenu extends JFrame{
         quitButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
                 dispose();
                 System. exit(0);
             }

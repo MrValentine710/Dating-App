@@ -42,10 +42,14 @@ public class GameWindow extends JFrame {
         setMinimumSize(new Dimension(1000, 650));
         setVisible(true);
 
+        String filepath2 = "src/Content/Click.wav";
+        buttonClickSound clickSound = new buttonClickSound();
 
         talkBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
+
                 Random rand = new Random();
                 try {
                     System.out.println("!");
@@ -83,6 +87,8 @@ public class GameWindow extends JFrame {
         flirtBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
+
                 Random rand = new Random();
                 try {
                     System.out.println("!");
@@ -124,6 +130,8 @@ public class GameWindow extends JFrame {
         aggressiveBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
+
                 Random rand = new Random();
                 try {
                     System.out.println("!");
@@ -165,6 +173,8 @@ public class GameWindow extends JFrame {
         numberBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
+
                 Random rand = new Random();
                 try {
                     System.out.println("!");
@@ -207,6 +217,8 @@ public class GameWindow extends JFrame {
         awkwardBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                clickSound.playButtonClick(filepath2);
+
                 Random rand = new Random();
                 try {
                     System.out.println("!");
